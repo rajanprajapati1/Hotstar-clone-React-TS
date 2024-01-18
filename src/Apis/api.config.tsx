@@ -5,7 +5,7 @@ import { MoviesData } from "../types/types";
 //   method: 'GET',
 //   headers: {
 //     accept: 'application/json',
-//     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFmMGY4MjYxMTAzMDk1MTRiM2U5MjMxODY3NjE0ZSIsInN1YiI6IjY0ZDM1ZDZhMDM3MjY0MDBmZmZjN2M3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TpzrrzlL_IEwa7uovSoSWI_8fwByw8FbP0aCbMk_2Y0'
+//     Authorization: 'Bearer Your Api Key'
 //   }
 // };
 
@@ -18,9 +18,9 @@ import { MoviesData } from "../types/types";
 //     method: 'GET',
 //     headers: {
 //       accept: 'application/json',
-//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFmMGY4MjYxMTAzMDk1MTRiM2U5MjMxODY3NjE0ZSIsInN1YiI6IjY0ZDM1ZDZhMDM3MjY0MDBmZmZjN2M3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TpzrrzlL_IEwa7uovSoSWI_8fwByw8FbP0aCbMk_2Y0'
+//       Authorization: 'Bearer Your Api Key'
 //     }
-//   };
+    //   };
 //   axios.get(url, options)
 //     .then(response => {
 //       console.log(response);
@@ -37,7 +37,7 @@ import { MoviesData } from "../types/types";
 //       method: 'GET',
 //       headers: {
 //         accept: 'application/json',
-//         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFmMGY4MjYxMTAzMDk1MTRiM2U5MjMxODY3NjE0ZSIsInN1YiI6IjY0ZDM1ZDZhMDM3MjY0MDBmZmZjN2M3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TpzrrzlL_IEwa7uovSoSWI_8fwByw8FbP0aCbMk_2Y0'
+//         Authorization: 'Bearer '
 //       }
 //     };
 
@@ -68,9 +68,9 @@ export type Movie ={
     vote_average: number;
     vote_count: number;
   }
-//   152f41397d36a9af171b938124f0281c
+//  
 export const fetchData = async (query:string): Promise<Movie[] | MoviesData[] | Movie[]> => {
-    const apiKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFmMGY4MjYxMTAzMDk1MTRiM2U5MjMxODY3NjE0ZSIsInN1YiI6IjY0ZDM1ZDZhMDM3MjY0MDBmZmZjN2M3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TpzrrzlL_IEwa7uovSoSWI_8fwByw8FbP0aCbMk_2Y0'; // Replace with your TMDb API key
+    const apiKey = ''; // Replace with your TMDb API key
     const url = `https://api.themoviedb.org/3/${query}`;
   
     const options = {
